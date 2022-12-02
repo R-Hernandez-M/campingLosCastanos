@@ -69,9 +69,6 @@ export default {
   },
   methods: {
     onSubmit: function() {
-      console.log(this.form.date1)
-      /*this.form.date1.substring(0, 10);
-      this.form.date2.substring(0, 10);*/
       axios.post('https://siloscastanos-default-rtdb.firebaseio.com/reservas.json', this.form)
       this.$message('submit!')
     },
